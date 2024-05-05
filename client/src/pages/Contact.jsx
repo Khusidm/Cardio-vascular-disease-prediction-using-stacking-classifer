@@ -39,7 +39,6 @@ const Contact = () => {
     {
       name: "Aryan",
       image: Aryan,
-      // hashtags: ["#JavaScript", "#React", "Python"],
       socialLinks: [
         {
           platform: "Instagram",
@@ -61,7 +60,6 @@ const Contact = () => {
     {
       name: "Khusi Das Mohapatra",
       image: Khusi,
-      // hashtags: ["#UI", "#React", "#CoffeeScript"],
       socialLinks: [
         {
           platform: "Instagram",
@@ -83,7 +81,6 @@ const Contact = () => {
     {
       name: "Suman Sourav Biswal",
       image: Suman,
-      // hashtags: ["#ML", "#DL", "#Python"],
       socialLinks: [
         {
           platform: "Instagram",
@@ -108,10 +105,6 @@ const Contact = () => {
     <div className="flex flex-col gap-5 ">
       <div className="font-extrabold text-[#0EA5E9] text-[32px] h-fit w-fit ml-[45%] shadow-inner p-1.5 rounded-lg flex ">
         Our Team
-        <span class="relative flex h-3 w-3 top-[0%] ">
-          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-          <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-        </span>
       </div>
       <div className="flex flex-wrap justify-evenly ">
         {teamMembers.map((member, index) => (
