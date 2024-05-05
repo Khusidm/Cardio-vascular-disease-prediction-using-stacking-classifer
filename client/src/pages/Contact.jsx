@@ -1,9 +1,9 @@
 import React from "react";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
-import ssd from "../assets/ssd.jpg";
-import Swagat from "../assets/Swagat.png";
+import Aryan from "../assets/Aryan.jpeg";
+import Khusi from "../assets/Khusi.jpg";
 import Suman from "../assets/Suman.png";
-const TeamCard = ({ name, role, image, hashtags, socialLinks }) => {
+const TeamCard = ({ name, role, image, socialLinks }) => {
   return (
     <div className="max-w-xs h-fit rounded-lg overflow-hidden shadow-lg object-contain">
       <img className="w-full  " src={image} alt={name} />
@@ -11,7 +11,7 @@ const TeamCard = ({ name, role, image, hashtags, socialLinks }) => {
         <div className="font-bold text-xl mb-2">{name}</div>
         <p className="text-gray-700 text-base">{role}</p>
       </div>
-      <div className="px-6 py-4">
+      {/* <div className="px-6 py-4">
         {hashtags.map((tag) => (
           <span
             key={tag}
@@ -20,7 +20,7 @@ const TeamCard = ({ name, role, image, hashtags, socialLinks }) => {
             {tag}
           </span>
         ))}
-      </div>
+      </div> */}
       <div className="px-6 py-4 flex justify-evenly">
         {socialLinks.map((link) => (
           <a
@@ -38,48 +38,48 @@ const TeamCard = ({ name, role, image, hashtags, socialLinks }) => {
 const Contact = () => {
   const teamMembers = [
     {
-      name: "Somya Subham Dash",
+      name: "Aryan",
       role: "Web Developer",
-      image: ssd,
-      hashtags: ["#JavaScript", "#React", "Python"],
+      image: Aryan,
+      // hashtags: ["#JavaScript", "#React", "Python"],
       socialLinks: [
         {
           platform: "Instagram",
           icon: <FaInstagram />,
-          url: "https://www.instagram.com/somya_subham/",
+          url: "https://www.instagram.com/_.aryan1._/",
         },
         {
           platform: "LinkedIn",
           icon: <FaLinkedin />,
-          url: "https://www.linkedin.com/in/somya-subham-dash-7a83211b7/",
+          url: "https://www.linkedin.com/",
         },
         {
           platform: "GitHub",
           icon: <FaGithub />,
-          url: "https://github.com/somyasubham9",
+          url: "https://github.com/SwiftFox1839",
         },
       ],
     },
     {
-      name: "Swagat Satprem Jena",
+      name: "Khusi Das Mohapatra",
       role: "Web Developer",
-      image: Swagat,
-      hashtags: ["#UI", "#React", "#CoffeeScript"],
+      image: Khusi,
+      // hashtags: ["#UI", "#React", "#CoffeeScript"],
       socialLinks: [
         {
           platform: "Instagram",
           icon: <FaInstagram />,
-          url: "https://www.instagram.com/_.__swagat__._/",
+          url: "https://www.instagram.com/khirabdhi.tanaya/",
         },
         {
           platform: "LinkedIn",
           icon: <FaLinkedin />,
-          url: "https://www.linkedin.com/in/swagat-jena/",
+          url: "https://www.linkedin.com/in/khusi-das-mohapatra-058652235/",
         },
         {
           platform: "GitHub",
           icon: <FaGithub />,
-          url: "https://github.com/Swagat-Satprem-Jena",
+          url: "https://github.com/Khusidm",
         },
       ],
     },
@@ -87,7 +87,7 @@ const Contact = () => {
       name: "Suman Sourav Biswal",
       role: "ML Engineer",
       image: Suman,
-      hashtags: ["#ML", "#DL", "#Python"],
+      // hashtags: ["#ML", "#DL", "#Python"],
       socialLinks: [
         {
           platform: "Instagram",
