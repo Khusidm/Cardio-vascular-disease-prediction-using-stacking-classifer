@@ -3,13 +3,12 @@ import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 import Aryan from "../assets/Aryan.jpeg";
 import Khusi from "../assets/Khusi.jpg";
 import Suman from "../assets/Suman.png";
-const TeamCard = ({ name, role, image, socialLinks }) => {
+const TeamCard = ({ name, image, socialLinks }) => {
   return (
     <div className="max-w-xs h-fit rounded-lg overflow-hidden shadow-lg object-contain">
       <img className="w-full  " src={image} alt={name} />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">{name}</div>
-        <p className="text-gray-700 text-base">{role}</p>
+        <div className="font-bold text-xl mb-2 text-center">{name}</div>
       </div>
       {/* <div className="px-6 py-4">
         {hashtags.map((tag) => (
@@ -39,7 +38,6 @@ const Contact = () => {
   const teamMembers = [
     {
       name: "Aryan",
-      role: "Web Developer",
       image: Aryan,
       // hashtags: ["#JavaScript", "#React", "Python"],
       socialLinks: [
@@ -62,7 +60,6 @@ const Contact = () => {
     },
     {
       name: "Khusi Das Mohapatra",
-      role: "Web Developer",
       image: Khusi,
       // hashtags: ["#UI", "#React", "#CoffeeScript"],
       socialLinks: [
@@ -85,7 +82,6 @@ const Contact = () => {
     },
     {
       name: "Suman Sourav Biswal",
-      role: "ML Engineer",
       image: Suman,
       // hashtags: ["#ML", "#DL", "#Python"],
       socialLinks: [
